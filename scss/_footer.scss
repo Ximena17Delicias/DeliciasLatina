@@ -1,0 +1,30 @@
+footer {
+    background: $primary-color;
+    color: $white-color;
+    padding: $space-md 0 $space-sm 0;
+    text-align: center;
+  
+    .contenedor-footer {
+      display: flex;
+      justify-content: space-evenly;
+      border-bottom: 1px solid $soft-grey;
+      padding-bottom: 50px;
+    }
+  
+    .content-foo {
+      h4 {
+        border-bottom: 3px solid #e5cdeb;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+      }
+  
+      p {
+        color: $secondary-text-color;
+      }
+    }
+  
+    .titulo-final {
+      font-size: $font-lg;
+      margin-top: $space-md;
+    }
+  }

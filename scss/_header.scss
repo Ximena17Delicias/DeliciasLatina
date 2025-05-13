@@ -1,0 +1,16 @@
+header {
+    background-color: $primary-color;
+    color: $white-color;
+    padding: $space-md;
+    @include flex-center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+  
+    img {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 400px;
+    }
+  }

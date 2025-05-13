@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: $heading-font;
+    font-size: $font-base;
+    background-color: #D9E2F3;
+    color: #333;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }

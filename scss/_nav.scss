@@ -1,0 +1,13 @@
+nav {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: $space-sm;
+  
+      li a {
+        color: $white-color;
+        text-decoration: none;
+      }
+    }
+  }
+  

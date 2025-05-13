@@ -1,0 +1,16 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin transition($props...) {
+    transition: $props;
+  }
+  
+  @mixin box($padding: 1rem, $bg: #fff, $border: 1px solid #ccc) {
+    padding: $padding;
+    background-color: $bg;
+    border: $border;
+  }
+  

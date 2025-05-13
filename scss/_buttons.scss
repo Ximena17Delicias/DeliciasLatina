@@ -1,0 +1,14 @@
+.btn {
+    padding: $space-sm $space-md;
+    background-color: $primary-color;
+    color: $white-color;
+    border: none;
+    border-radius: $radius-sm;
+    cursor: pointer;
+    font-weight: bold;
+    @include transition(all 0.3s ease-in-out);
+  
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
