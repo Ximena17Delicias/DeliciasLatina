@@ -13,53 +13,37 @@
         <nav>
         <ul>
             <li><a href="../index.html">inicio</a></li>
-            <li><a href="./Recetas.html">Recetas</a></li>
-            <li><a href="./Tips.html">Tips</a></li>
-            <li><a href="./Contacto.html">Contacto</a></li>
-            <li><a href="./Quienes somos.html">Quienes somos</a></li>
-            <img src="../imagen/Changua (Colombian Egg and Milk Soup).jpg" class="img-1" alt="">
+            <li><a href="./recetas.html">Recetas</a></li>
+            <li><a href="./tips.html">Tips</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./quienes-somos.html">Quienes somos</a></li>
         </ul>
         </nav>
+        <img src="../imagen/deliciaslati.jpg" class="img-1" alt="Logo Delicias Latina">
      </header>
-     <main>
-        <section>
-           <h2>suscribete</h2>
-           <form action="">
-            <div>
-              <label for="nombre y apellido">nombre y apellido</label>
-              <input type="text" id="nombre y apellido">
-            </div>
-            <div>
-              <label for="mail"> correo electronico</label>
-              <input type="email" name="" id="">
-            </div>
-            <div>  
-              <label for="mensaje">deja tu mensaje</label>
-              <textarea name="" id=""></textarea>
-            </div>  
-            <input type="submit" value="enviar">
-            <input type="reset" value="borrar">
-           </form>
-        </section>
-     </main>
-
-     <footer>
-      <div class="contenedor-footer">
-          <div class="content-foo">
-              <h4>Phone</h4>
-              <p>983402</p>
-          </div>
-          <div class="content-foo">
-              <h4>Email</h4>
-              <p>983402</p>
-          </div>
-          <div class="content-foo">
-              <h4>Location</h4>
-              <p>983402</p>
-          </div>
+ <main class="contacto-main">
+    <section class="contacto-contenido">
+      <div class="texto-contacto">
+        <h2>Contacto</h2>
+        <p>
+           Nos encantaría saber tu opinión sobre nuestras recetas: qué platos te gustaría ver, qué te han parecido los que ya probaste o si tienes algún consejo para mejorar. ¡Tu aporte es fundamental para seguir cocinando con sabor y tradición!
+        </p>
       </div>
-      <h2 class="titulo-final">&copy; Delicias Latina | Ximena</h2>
-  </footer>
+
+      <form class="formulario-contacto">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" placeholder="Tú Nombre" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Tú email de contacto" required />
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" rows="4" placeholder="Ingresa el mensaje que nos quieras dejar" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
     <div class="contenedor-footer">
@@ -73,7 +57,7 @@
         </div>
         <div class="content-foo">
             <h4>Location</h4>
-            <p>983402</p>
+            <p>Cali, Colombia</p>
         </div>
     </div>
     <h2 class="titulo-final">&copy; Delicias Latina | Ximena</h2>

@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: #fff !important;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -85,7 +85,7 @@ nav ul li a {
 }
 
 .portafolio {
-  background: #f2f2f2;
+  background: #fff;
 }
 
 .galeria-port {
@@ -174,22 +174,6 @@ p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.divRecetas article {
-  border: brown 1px solid;
-  border-radius: 15px;
-  padding: 30px;
-  margin: 40px;
-}
-.divRecetas article img {
-  width: 100%;
-  border-radius: 15px;
-}
-
-.cards {
-  display: flex;
-  flex-direction: row;
-}
-
 main .sobre-nosotros {
   padding: 30px 0 60px 0;
 }
@@ -260,6 +244,44 @@ footer .titulo-final {
   overflow: hidden;
 }
 
+.receta-linea {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.receta-linea img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.receta-linea .contenido {
+  flex: 1;
+}
+.receta-linea .contenido h3 {
+  font-size: 24px;
+  color: chocolate;
+  margin-bottom: 10px;
+}
+.receta-linea .contenido p {
+  font-size: 16px;
+  text-align: justify;
+  color: #333;
+}
+@media (max-width: 768px) {
+  .receta-linea {
+    flex-direction: column;
+    text-align: center;
+  }
+  .receta-linea img {
+    width: 100%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -269,7 +291,7 @@ footer .titulo-final {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  background-color: #D9E2F3;
+  background-color: #fff;
   color: #333;
 }
 
@@ -346,18 +368,230 @@ nav ul li a {
   background-color: #a55318;
 }
 
-.card {
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  text-align: center;
+.contacto-body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
 }
-.card h3 {
+
+.header-azul {
+  background-color: #00bce4;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-azul h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+.header-azul .menu-icon {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.contacto-main {
+  padding: 60px 20px;
+}
+.contacto-main .contacto-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+}
+.contacto-main .texto-contacto {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+}
+.contacto-main .texto-contacto h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: chocolate;
+  margin-bottom: 20px;
+}
+.contacto-main .texto-contacto p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.contacto-main .formulario-contacto {
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.contacto-main .formulario-contacto label {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.contacto-main .formulario-contacto input,
+.contacto-main .formulario-contacto textarea {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
   margin-bottom: 10px;
 }
-.card p {
-  font-weight: 300;
+.contacto-main .formulario-contacto button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: chocolate;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.contacto-main .formulario-contacto button:hover {
+  background-color: rgb(246, 107, 9);
+}
+
+.quienes-somos {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+}
+.quienes-somos h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: chocolate;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.quienes-somos .imagen-principal {
+  width: 100%;
+  max-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.quienes-somos p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
   text-align: justify;
+}
+.quienes-somos .valores {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.quienes-somos .valores .valor {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+}
+.quienes-somos .valores .valor img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto 15px;
+  border-radius: 10px;
+  display: block;
+}
+.quienes-somos .valores .valor p {
+  font-size: 0.95rem;
+  color: #444;
+}
+@media (max-width: 768px) {
+  .quienes-somos .valores {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.tips-cocina {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+}
+.tips-cocina .intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.tips-cocina .intro h1 {
+  font-size: 2.5rem;
+  color: chocolate;
+  margin-bottom: 20px;
+}
+.tips-cocina .intro p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+.tips-cocina .lista-tips {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.tips-cocina .lista-tips .tip {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.tips-cocina .lista-tips .tip img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.tips-cocina .lista-tips .tip .contenido h3 {
+  font-size: 1.3rem;
+  color: chocolate;
+  margin-bottom: 10px;
+}
+.tips-cocina .lista-tips .tip .contenido p {
+  font-size: 1rem;
+  color: #333;
+  text-align: justify;
+}
+@media (max-width: 768px) {
+  .tips-cocina .lista-tips .tip {
+    flex-direction: column;
+    text-align: center;
+  }
+  .tips-cocina .lista-tips .tip img {
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .tips-cocina .lista-tips .tip .contenido h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .galeria-port {
+    flex-direction: column;
+    align-items: center;
+  }
+  .galeria-port .imagen-port {
+    width: 80%;
+  }
+  .contenido-textos {
+    padding: 0 10px;
+  }
+  .servicio-cont {
+    flex-direction: column;
+    gap: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
