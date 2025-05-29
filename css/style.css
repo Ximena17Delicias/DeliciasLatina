@@ -282,25 +282,6 @@ footer .titulo-final {
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  background-color: #fff;
-  color: #333;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
 header {
   background-color: chocolate;
   color: #fff;
@@ -593,5 +574,109 @@ nav ul li a {
   .servicio-cont {
     flex-direction: column;
     gap: 30px;
+  }
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedor-sobre-nosotros {
+    flex-direction: column;
+  }
+  .imagen-port {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+.navbar {
+  background: chocolate;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.navbar #menu-toggle {
+  display: none;
+}
+.navbar .menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.navbar .menu {
+  display: flex;
+  list-style: none;
+}
+.navbar .menu li {
+  margin-left: 1rem;
+}
+.navbar .menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .navbar .menu-icon {
+    display: block;
+  }
+  .navbar .menu {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: chocolate;
+    display: none;
+  }
+  .navbar .menu li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+  .navbar #menu-toggle:checked ~ .menu {
+    display: flex;
+  }
+}
+
+.intro-recetas {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 40px 20px;
+}
+.intro-recetas h1 {
+  font-size: 2.5rem;
+  color: chocolate;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.intro-recetas p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+  header img {
+    width: 100px;
+  }
+  .titulo {
+    font-size: 24px;
   }
 }/*# sourceMappingURL=style.css.map */
