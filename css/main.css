@@ -690,4 +690,19 @@ nav ul li a {
   max-width: 1000px;
   margin: auto;
   padding: 0 20px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.about-services {
+  padding: 30px;
+}
+@media (max-width: 768px) {
+  .about-services {
+    padding: 15px;
+  }
+  .about-services .servicio-ind img {
+    width: 100%;
+  }
+  .about-services .servicio-ind p {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=main.css.map */
